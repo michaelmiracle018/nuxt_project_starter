@@ -1,0 +1,42 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "npm run format && npm run lint && nuxt build",
+    "dev": "npm run format && npm run lint && nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
+    "format": "prettier .  --write",
+    "prepare": "husky"
+  },
+  "dependencies": {
+    "@nuxt/bridge": "^3.3.1",
+    "@nuxt/types": "^2.18.1",
+    "@nuxt/typescript-build": "^3.0.2",
+    "@nuxtjs/tailwindcss": "^6.12.1",
+    "@pinia/nuxt": "^0.5.3",
+    "nuxt": "^3.12.4",
+    "pinia": "^2.2.1",
+    "vue": "latest"
+  },
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.24.5",
+    "@rollup/plugin-inject": "^5.0.5",
+    "@rushstack/eslint-patch": "^1.1.4",
+    "@types/node": "^22.1.0",
+    "@vue/eslint-config-prettier": "^7.0.0",
+    "@vue/eslint-config-typescript": "^13.0.0",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^8.22.0",
+    "eslint-plugin-vue": "^9.3.0",
+    "husky": "^9.1.4",
+    "postcss": "^8.4.41",
+    "prettier": "^2.7.1",
+    "tailwindcss": "^3.4.7",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.5.4"
+  }
+}

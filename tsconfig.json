@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "strict": true,
+    "jsx": "preserve",
+    "sourceMap": true,
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["./*"],
+      "@/*": ["./*"]
+    },
+    "types": ["@nuxt/types", "@types/node"],
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true
+  },
+  "exclude": ["node_modules", ".nuxt", "dist"],
+  "include": [
+    "nuxt.config.ts",
+    "app/**/*",
+    "components/**/*",
+    "composables/**/*",
+    "layouts/**/*",
+    "pages/**/*",
+    "plugins/**/*",
+    "store/**/*"
+  ]
+}

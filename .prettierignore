@@ -1,0 +1,15 @@
+.nuxt/
+assets/
+node_modules/
+types.d.ts
+tsconfig.json
+settings.json
+package.json
+package-lock.json
+nuxt.config.ts
+tailwind.config.js
+.prettierrc.json
+.gitignore
+.eslintrc.cjs
+.eslintignore
+README.md
